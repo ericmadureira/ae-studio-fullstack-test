@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
 import { getOldestBusiness } from '../services/business';
-import { OldestBusiness } from '../services/business/types';
+import { Business } from '../services/business/types';
 
 const HomePage = () => {
   const [oldestBusiness, setOldestBusiness] = useState({});
