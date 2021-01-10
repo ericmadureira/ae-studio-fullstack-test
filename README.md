@@ -6,9 +6,10 @@ This application displays data from LA businesses. There's a Node API fetching s
 ## How to run
 1. make sure you have [node installed](https://nodejs.org/en/)
 2. clone the repo
-3. on the terminal start the API at `./api/` running `node index.js`
+3. on the terminal start the API at `./api/` running `node index.ts`
 4. on another terminal, start the front-end app at `./src/` running `yarn start`
 5. the application will be available at http://localhost:3000
+
 ## Tech stack
 - react
 - typescript
@@ -16,3 +17,6 @@ This application displays data from LA businesses. There's a Node API fetching s
 - styled-components
 - node js
 - express
+
+## Improvements
+- Separate the API and react app
