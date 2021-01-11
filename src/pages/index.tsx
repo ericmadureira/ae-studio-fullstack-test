@@ -5,8 +5,12 @@ const HomePage = () => {
   return (
     <>
       <h1>Home page</h1>
-      <Link to='business/oldest-business-report'>Oldest Business Report</Link>
-      <Link to='business/most-locations-businesses-report'>Most Locations Businesses Report</Link>
+      <button>
+        <Link to='business/most-locations-businesses-report'>Most Locations Businesses Report</Link>
+      </button>
+      <button>
+        <Link to='business/oldest-business-report'>Oldest Business Report</Link>
+      </button>
     </>
   );
 };
