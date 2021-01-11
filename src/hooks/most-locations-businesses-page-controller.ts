@@ -1,16 +1,16 @@
 import { useEffect, useState } from 'react';
 
-import { fetchOldestBusiness } from '../services/business';
+import { fetchMostLocationsBusinesses } from '../services/business';
 import { Business } from '../services/business/types';
 
-export const oldestBusinessReportPageController = () => {
-  const [oldestBusiness, setOldestBusiness] = useState<Business>();
+export const mostLocationsBusinessesReportPageController = () => {
+  const [mostLocationsBusinesses, setMostLocationsBusinesses] = useState<Business[]>();
 
   useEffect(() => {
-    fetchOldestBusiness().then(setOldestBusiness);
-  }, [fetchOldestBusiness]);
+    fetchMostLocationsBusinesses().then(setMostLocationsBusinesses);
+  }, [fetchMostLocationsBusinesses]);
 
   return {
-    oldestBusiness,
+    mostLocationsBusinesses,
   };
 };

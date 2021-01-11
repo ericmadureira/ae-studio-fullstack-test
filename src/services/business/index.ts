@@ -10,6 +10,10 @@ const api = axios.create({
   timeout: 5000,
 });
 
+export const fetchMostLocationsBusinesses = (): Promise<Business[]> => api
+  .get(`resource/6rrh-rzua.${DEFAULT_EXTENSION}`)
+  .then(res => res.data);
+
 export const fetchOldestBusiness = (): Promise<Business> => api
   .get(`resource/6rrh-rzua.${DEFAULT_EXTENSION}?$order=location_start_date ASC&$limit=1`)
   .then(res => res.data);

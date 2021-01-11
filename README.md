@@ -20,3 +20,4 @@ This application displays data from LA businesses. There's a Node API fetching s
 
 ## Improvements
 - Separate the API and react app
+- Register and use app token for the API
