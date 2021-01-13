@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Header from '../Header'
+import Header from '../Header';
 import * as S from './styles';
 
 interface LayoutProps {
@@ -10,8 +10,8 @@ interface LayoutProps {
 const Layout = ({ children }: LayoutProps) => {
   return (
     <S.LayoutWrapper>
+      <Header />
       <S.LayoutMain>
-        <Header />
         {children}
       </S.LayoutMain>
     </S.LayoutWrapper>

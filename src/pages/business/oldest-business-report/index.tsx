@@ -1,17 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
-import { oldestBusinessReportPageController } from '../../../hooks/oldest-business-page-controller';
+import { OldestBusinessReportPageController } from '../../../hooks/oldest-business-page-controller';
 
 const OldestBusinessReportPage = () => {
-  const { oldestBusiness } = oldestBusinessReportPageController();
+  const { oldestBusiness } = OldestBusinessReportPageController();
   console.log('OLDEST BUSINESS: ', oldestBusiness);
 
   return (
     <>
       <h1>Oldest Business Report</h1>
-      <Link to='/'>Back to Home</Link>
-      <h2>{oldestBusiness}</h2>
+      <h2>{JSON.stringify(oldestBusiness)}</h2>
     </>
   );
 };

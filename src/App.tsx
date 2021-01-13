@@ -6,18 +6,18 @@ import {
 } from 'react-router-dom';
 
 import Layout from './components/Layout';
-import HomePage from './pages';
+import HomePage from './pages/home';
 import OldestBusinessReportPage from './pages/business/oldest-business-report';
-import MostLocationBusinessesReportPage from './pages/business/most-locations-businesses-report';
+import MostLocationBusinessReportPage from './pages/business/most-locations-business-report';
 
 function App() {
   return (
-    <Layout>
-      <Router>
+    <Router>
+      <Layout>
         <Switch>
           {/* BUSINESS ROUTES */}
-          <Route path='/business/most-locations-businesses-report'>
-            <MostLocationBusinessesReportPage />
+          <Route path='/business/most-locations-business-report'>
+            <MostLocationBusinessReportPage />
           </Route>
           <Route path='/business/oldest-business-report'>
             <OldestBusinessReportPage />
@@ -27,8 +27,8 @@ function App() {
             <HomePage />
           </Route>
         </Switch>
-      </Router>
-    </Layout>
+      </Layout>
+    </Router>
   );
 }
 

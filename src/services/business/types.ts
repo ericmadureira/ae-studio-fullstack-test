@@ -1,5 +1,3 @@
-import { StringMappingType } from "typescript";
-
 export interface Location {
   latitude: string;
   longitude: string;
